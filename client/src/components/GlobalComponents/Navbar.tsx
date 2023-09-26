@@ -5,16 +5,17 @@ import { Searchbar, Logo, CartCard } from './subComponents/Index';
 const Navbar = () => {
   return (
     <>
-      <header className="">
-        <ul className="flex flex-col sm:flex-row justify-around items-center p-1">
-          {/* Logo */}
-          <li>
-            <Logo />
-          </li>
-          {/* SearchBar */}
-          <li>
-            <Searchbar />
-          </li>
+    
+      <header className="flex flex-col sm:flex-row justify-around items-center p-1 bg-black/10 backdrop-blur-1">
+        {/* Logo */}
+        <div className="w-[40%]">
+          <Logo />
+        </div>
+        {/* SearchBar */}
+        <div className="w-[100%]">
+          <Searchbar />
+        </div>
+        <ul className="flex justify-around w-[100%]">
           <li>Favorite</li>
           <li>
             <CartCard />
