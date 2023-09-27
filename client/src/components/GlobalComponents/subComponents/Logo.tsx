@@ -3,12 +3,12 @@ import React from 'react';
 function Logo() {
   return (
     <>
-      <div className="card">
+      <div>
         <div className="logo">
           <h1 className="text-xl font-extrabold p-1 text-center">
             ONE &nbsp;
             <span className=" tracking-widest text-center font-semibold">
-               PRICE
+              PRICE
             </span>
           </h1>
         </div>

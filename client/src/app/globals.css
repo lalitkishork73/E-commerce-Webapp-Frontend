@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 7px solid rgb(65, 70, 68);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(123, 124, 124, 0.973);
+}

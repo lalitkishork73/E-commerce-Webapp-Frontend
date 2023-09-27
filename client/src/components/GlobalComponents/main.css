@@ -91,11 +91,53 @@
   position: relative;
 }
 
+/* ---- search-bar ---- */
+
+.search-main {
+  position: relative;
+  height: 25px;
+  border-radius: 12px;
+}
+.searchbar {
+  padding: 4px;
+  position: relative;
+  inset: 0;
+  top: 0;
+  background: rgba(46, 72, 88, 0.486);
+  width: 100%;
+  /* height: auto; */
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  border: 2px;
+
+  /* justify-content: ; */
+}
+
+.searchbar .suggetion-list {
+  display: none;
+  /* z-index: 1; */
+}
+
+.visible-suggestion {
+  font-size: 11px;
+  height: inherit;
+  width: 100%;
+  background: transparent;
+  display: visible;
+}
+
+.searchbar div input:focus {
+  outline: none;
+}
+
 /*----- cart ------- */
 
 /* Apply the styles to the cart container */
 .cart {
   position: relative;
+  
 }
 
 .cart:hover .cartBox {
@@ -110,10 +152,11 @@
   aspect-ratio: 1;
   border-radius: 0.5rem;
   inset: 0;
-  top: 1.5rem;
+  top: 1.4rem;
   left: -15.5rem;
   overflow: hidden;
-  /* display: none; */
+  transition: width 2s;
+  display: none;
   /* Hide the cartBox on screens with a width less than 640px */
   /* Added this line for mobile responsiveness */
 }
@@ -121,6 +164,10 @@
 @media screen and (max-width: 640px) {
   .cartBox {
     display: none; /* Hide the cartBox on smaller screens */
+  }
+  .cart:hover .cartBox {
+    display: none;
+    /* transition: width 2s; */
   }
 }
 
@@ -159,28 +206,22 @@
   background: #0f110d;
   z-index: 1;
   border-radius: inherit;
+  overflow-y: scroll;
 }
 
-.mainList {
-  z-index: 1;
-  padding: 2px;
-  overflow-y: overlay;
-  border-radius: inherit;
+.boxC::-webkit-scrollbar {
+  width: 4px;
 }
 
-.mainList::-webkit-scrollbar {
-  width: 20px;
-}
-
-.mainList::-webkit-scrollbar-thumb {
-  border: 7px solid transparent;
+.boxC::-webkit-scrollbar-thumb {
+  border: 7px solid yellow transparent;
   background-clip: padding-box;
   border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: var(--gradient-color4);
 }
 
-.mainList::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+.boxC::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 78, 92, 0.5);
 }
 
 /* Define the rotate animation */

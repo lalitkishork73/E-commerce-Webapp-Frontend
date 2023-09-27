@@ -1,43 +1,52 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react';
 
+import { BiSearch, BiMicrophone, BiHistory } from 'react-icons/bi';
+import { MdOutlineClear } from 'react-icons/md';
 function Searchbar() {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    setVisible(!visible);
+  };
   return (
     <>
-    <div className="bg-white-900 w-[100%] h-[25px] rounded-xl  flex items-center overflow-hidden border-2 border-[#333536]">
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-[100%] rounded-l-xl text-black text-[14px] h-auto px-3 outline-none "
-              />
-
-              <button className="bg-[var(--gradient-color4)]  h-[25px] w-[80px] px-3 flex justify-center items-center border-[#012a35]">
-                <svg
-                  width="45"
-                  height="25"
-                  viewBox="0 -10 40 70"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
-                >
-                  <circle
-                    cx="20"
-                    cy="20"
-                    r="17.5"
-                    stroke="white"
-                    stroke-width="5"
-                  />
-                  <line
-                    x1="30"
-                    y1="30"
-                    x2="45"
-                    y2="45"
-                    stroke="white"
-                    stroke-width="5"
-                  />
-                </svg>
-              </button>
-            </div>
+      <main className="search-main">
+        <div className="searchbar">
+          <div className="flex">
+            <input
+              type="text"
+              onClick={() => {
+                setVisible(true);
+              }}
+              placeholder="Search"
+              className="w-[90%] text-white bg-transparent text-sm px-3"
+            />
+            <button
+              className={visible ? 'visible' : 'hidden '}  
+              onClick={toggleVisible}
+            >
+              <MdOutlineClear />
+            </button>
+            <button className="w-[5%] flex justify-center items-center">
+              <BiMicrophone />
+            </button>
+            <button className="w-[5%] flex justify-center items-center">
+              <BiSearch />
+            </button>
+          </div>
+          <div className={visible ? 'visible-suggestion' : 'suggetion-list '}>
+            <div className="w-full h-[1px] my-2 bg-white"></div>
+            <ul className="search-suggestion">
+              <li className="flex mx-3 my-1">
+                <div>Dragon ball G</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
     </>
-  )
+  );
 }
 
-export default Searchbar
+export default Searchbar;
