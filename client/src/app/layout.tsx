@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='bg-[url("https://pixabay.com/get/g62060f60b0047d5aac2669a0783d2f349bbd28d872ac414716bb25ae0e400537465e0794d9f4276edd32c154b6884b1125f9c2db6a6a37b67c5a455f81282946_1920.jpg")]'>
+        <main className="">
           <Navbar />
           <main>{children}</main>
           <Footer />

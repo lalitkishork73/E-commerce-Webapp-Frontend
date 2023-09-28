@@ -4,8 +4,8 @@ const CartCard = () => {
   return (
     <>
       <div className="cart">
-        <div className="relative mx-1 scale-125 p-1">
-          <FaShoppingCart />
+        <div className="relative mx-1 p-1 hover:scale-150">
+          
           <div className="absolute inset-0 left-[20px] top-[-2px] text-xs bg-black/10  backdrop-blur-md text-[#fdfdfd] text-center h-5 w-auto font-medium">
             0
           </div>

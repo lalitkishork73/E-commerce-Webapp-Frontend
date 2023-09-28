@@ -137,11 +137,11 @@
 /* Apply the styles to the cart container */
 .cart {
   position: relative;
-  
 }
 
 .cart:hover .cartBox {
   display: block;
+  transition: 2s;
 }
 
 /* Style the cartBox, which holds the cart content */
@@ -155,8 +155,9 @@
   top: 1.4rem;
   left: -15.5rem;
   overflow: hidden;
-  transition: width 2s;
+  
   display: none;
+
   /* Hide the cartBox on screens with a width less than 640px */
   /* Added this line for mobile responsiveness */
 }
