@@ -69,8 +69,8 @@ const Navbar = () => {
               </div>
             </Link>
           </li>
-          <li>
-            <Link href="/login" className="mx-1 px-4 py-1 bg-gray-900 rounded-lg">
+          <li className='h-10 flex justify-center items-center sm:h-auto'>
+            <Link href="/login" className="mx-1 px-4 py-1  bg-gray-900 rounded-lg">
               Login
             </Link>
             <Link

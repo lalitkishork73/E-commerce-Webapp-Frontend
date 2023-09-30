@@ -25,17 +25,7 @@
   /* Border colors */
   --border-color: #333333; /* Dark gray for borders */
 
-  /* Additional color variations */
-  --cir-colorname1: #aaff00;
-  --cir-colorname2: #ff00aa;
-  --cir-colorname3: #00ffaa;
-  --cir-colorname4: #ffaa00;
-
-  /* Futuristic color pattern */
-  --futuristic-color1: #ff00ff;
-  --futuristic-color2: #00ffff;
-  --futuristic-color3: #ff9900;
-  --futuristic-color4: #99ff00;
+ 
 
   /* Gradient backgrounds */
   --gradient-bg1: linear-gradient(

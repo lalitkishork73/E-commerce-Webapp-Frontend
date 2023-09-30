@@ -1,13 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaShoppingCart } from 'react-icons/fa';
+import cart from '@/assets/icons8-shopping-cart-64.png';
 const CartCard = () => {
   return (
     <>
       <div className="cart">
-        <div className="relative mx-1 p-1 hover:scale-150">
-          
-          <div className="absolute inset-0 left-[20px] top-[-2px] text-xs bg-black/10  backdrop-blur-md text-[#fdfdfd] text-center h-5 w-auto font-medium">
-            0
+        <div className="relative hover:scale-110 ">
+          <Image
+            src={cart}
+            alt="Picture of the author"
+            width={35}
+            height={30}
+            className=""
+          />
+          <div className="absolute inset-0 left-[1px] top-[8px] text-xs bg-transparent text-[#000000] text-center h-5 w-auto font-bold ">
+            1
           </div>
         </div>
         <div className="cartBox">
