@@ -8,14 +8,13 @@ import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
-
   const [toggle, setToggle] = useState(false);
   const switchs = () => {
     setToggle(!toggle);
   };
   return (
     <>
-      <header className=" flex flex-col sm:flex-row justify-around items-center p-1 bg-black/10 backdrop-blur-1 relative">
+      <header className=" flex flex-col sm:flex-row justify-around items-center p-1 bg-gradient-to-b from-black/40 backdrop-blur-10 relative z-10 w-full">
         {/* Logo */}
         <div className="w-[40%]">
           <Logo />
@@ -69,8 +68,11 @@ const Navbar = () => {
               </div>
             </Link>
           </li>
-          <li className='h-10 flex justify-center items-center sm:h-auto'>
-            <Link href="/login" className="mx-1 px-4 py-1  bg-gray-900 rounded-lg">
+          <li className="h-10 flex justify-center items-center sm:h-auto">
+            <Link
+              href="/login"
+              className="mx-1 px-4 py-1  bg-gray-900 rounded-lg"
+            >
               Login
             </Link>
             <Link

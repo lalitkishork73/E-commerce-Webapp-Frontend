@@ -25,7 +25,17 @@
   /* Border colors */
   --border-color: #333333; /* Dark gray for borders */
 
- 
+  /* Additional color variations */
+  --cir-colorname1: #aaff00;
+  --cir-colorname2: #ff00aa;
+  --cir-colorname3: #00ffaa;
+  --cir-colorname4: #ffaa00;
+
+  /* Futuristic color pattern */
+  --futuristic-color1: #ff00ff;
+  --futuristic-color2: #00ffff;
+  --futuristic-color3: #ff9900;
+  --futuristic-color4: #99ff00;
 
   /* Gradient backgrounds */
   --gradient-bg1: linear-gradient(
@@ -74,6 +84,7 @@
 .logo {
   font-family: 'Space Grotesk', sans-serif;
   background: var(--gradient-color4);
+  -webkit-background-clip: text;
   background-clip: text;
   --webkit-background-clip: text;
   color: transparent;
@@ -97,7 +108,12 @@
   width: 100%;
   /* height: auto; */
   border-radius: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   z-index: 1;
   border: 2px;
@@ -131,6 +147,8 @@
 
 .cart:hover .cartBox {
   display: block;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
   transition: 2s;
 }
 
@@ -142,10 +160,10 @@
   aspect-ratio: 1;
   border-radius: 0.5rem;
   inset: 0;
-  top: 1.4rem;
+  top: 2rem;
   left: -15.5rem;
   overflow: hidden;
-  
+
   display: none;
 
   /* Hide the cartBox on screens with a width less than 640px */
@@ -171,19 +189,40 @@
   top: 190px;
   left: -230px;
   border-radius: inherit;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
   transform-origin: center right;
   width: 400px;
   height: 200px;
 }
 
 .cartBox::after {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(yellow)
+  );
+  background: -o-linear-gradient(bottom, transparent, yellow);
   background: linear-gradient(0deg, transparent, yellow);
+  -webkit-animation: rotate 3s linear infinite;
   animation: rotate 3s linear infinite;
 }
 
 .cartBox::before {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(rgb(0, 183, 255))
+  );
+  background: -o-linear-gradient(bottom, transparent, rgb(0, 183, 255));
   background: linear-gradient(0deg, transparent, rgb(0, 183, 255));
+  -webkit-animation: rotate 3s linear infinite;
   animation: rotate 3s linear infinite;
+  -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
 }
 
@@ -216,50 +255,23 @@
 }
 
 /* Define the rotate animation */
-@keyframes rotate {
+@-webkit-keyframes rotate {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); /* Corrected property name to 'transform' */
   }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); /* Corrected property name to 'transform' */
   }
 }
-
-/* .card{}
-.card {
-  width: 100px;
-  height: 70px;
-  aspect-ratio: 1/1.5;
-  background: var(--cir-1);
-  border-radius: 0.5rem;
-  position: relative;
-}
-
-.card::before,
-.card::after {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--cir-2),
-    var(--cir-3)
-   
-  );
-  border-radius: inherit;
-  animation: rotation 10s linear infinite;
-  z-index: -1;
-}
-
-.card::before {
-  filter: blur(5.5rem);
-}
-
-@keyframes rotation {
+@keyframes rotate {
   0% {
-    --gradient-angle: 0deg;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); /* Corrected property name to 'transform' */
   }
   100% {
-    --gradient-angle: 360deg;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); /* Corrected property name to 'transform' */
   }
-}*/
+}
