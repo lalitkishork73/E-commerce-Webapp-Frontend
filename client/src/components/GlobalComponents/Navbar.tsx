@@ -14,12 +14,12 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className=" flex flex-col sm:flex-row justify-around items-center p-1 bg-gradient-to-b from-black/40 backdrop-blur-10 relative z-10 w-full">
+      <header className=" flex flex-col sm:flex-row justify-around items-center p-1  sm:bg-gradient-to-b from-black/40  backdrop-blur-md relative z-10 w-full ">
         {/* Logo */}
         <div className="w-[40%]">
           <Logo />
         </div>
-        <div className="absolute inset-0 left-[92%] top-4 h-4 w-4 sm:hidden">
+        <div className="absolute inset-0 left-[92%] top-4 h-4 w-4 bg-black/40 backdrop:blur-md sm:hidden">
           {toggle ? (
             <>
               <AiOutlineClose
@@ -48,11 +48,11 @@ const Navbar = () => {
         <ul
           className={`${
             toggle
-              ? 'block absolute top-16 my-3 p-2 mx-2 font-medium '
+              ? 'block absolute top-16 my-3 p-2 mx-2 font-medium bg-black/40 backdrop:blur-md  sm:bg-transparent'
               : 'hidden'
-          } text-center sm:flex w-full sm:flex-row sm:justify-around sm:relative sm:top-0 sm:my-2 sm:mx-0 sm:w-[100%] sm:items-center text-sm`}
+          } text-center sm:flex w-full sm:flex-row sm:justify-around sm:relative sm:top-0 sm:my-2 sm:mx-0 sm:w-[100%] sm:items-center text-sm  `}
         >
-          <li className="sm:flex hover:text-emerald-400">
+          <li className="sm:flex ">
             <Link href="/favorite">
               Favorite
               <span className="mt-1 ml-1 hidden sm:flex-row ">
@@ -71,7 +71,7 @@ const Navbar = () => {
           <li className="h-10 flex justify-center items-center sm:h-auto">
             <Link
               href="/login"
-              className="mx-1 px-4 py-1  bg-gray-900 rounded-lg"
+              className="mx-1 px-4 py-1 bg-gray-900 rounded-lg"
             >
               Login
             </Link>

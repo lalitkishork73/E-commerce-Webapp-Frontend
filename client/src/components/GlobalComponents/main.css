@@ -1,82 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Primary color */
-  --primary-color: #008cff;
-
-  /* Secondary color */
-  --secondary-color: #dfd114;
-
-  /* Text colors */
-  --text-primary: #ffffff; /* White for text on black background */
-  --text-secondary: #333333; /* Dark gray for additional text */
-
-  /* Button colors */
-  --button-bg: var(--primary-color);
-  --button-text: var(--text-primary);
-
-  /* Link colors */
-  --link-color: var(--primary-color);
-  --link-hover-color: #ff6b00; /* An orange color for hover effect */
-
-  /* Background colors */
-  --background-color: #000000; /* Black background */
-
-  /* Border colors */
-  --border-color: #333333; /* Dark gray for borders */
-
-  /* Additional color variations */
-  --cir-colorname1: #aaff00;
-  --cir-colorname2: #ff00aa;
-  --cir-colorname3: #00ffaa;
-  --cir-colorname4: #ffaa00;
-
-  /* Futuristic color pattern */
-  --futuristic-color1: #ff00ff;
-  --futuristic-color2: #00ffff;
-  --futuristic-color3: #ff9900;
-  --futuristic-color4: #99ff00;
-
-  /* Gradient backgrounds */
-  --gradient-bg1: linear-gradient(
-    to right,
-    #008cff,
-    #ff6b00
-  ); /* Horizontal gradient */
-  --gradient-bg2: linear-gradient(
-    to bottom,
-    #dfd114,
-    #ff6b00
-  ); /* Vertical gradient */
-
-  /* Text and heading colors */
-  --heading-primary: #ffffff; /* White for main headings */
-  --heading-secondary: #ff6b00; /* Orange for secondary headings */
-  --text-body: #dddddd; /* Light gray for regular text */
-  --text-muted: #999999; /* Gray for muted text */
-
-  /* Additional gradient colors */
-  --gradient-color1: linear-gradient(
-    to right,
-    #ff00ff,
-    #00ffff
-  ); /* Gradient 1 */
-  --gradient-color2: linear-gradient(
-    to right,
-    #ff9900,
-    #99ff00
-  ); /* Gradient 2 */
-  --gradient-color3: linear-gradient(
-    to right,
-    #00ffaa,
-    #ffaa00
-  ); /* Gradient 3 */
   --gradient-color4: linear-gradient(45deg, #dfd114, #008cff); /* Gradient 4 */
-}
-@property --gradient-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
 }
 
 /*----- logo------- */
@@ -104,7 +29,7 @@
   position: relative;
   inset: 0;
   top: 0;
-  background: rgba(46, 72, 88, 0.486);
+  background: rgba(0, 5, 8, 0.185);
   width: 100%;
   /* height: auto; */
   border-radius: inherit;
@@ -116,7 +41,10 @@
   -ms-flex-direction: column;
   flex-direction: column;
   z-index: 1;
-  border: 2px;
+  border: 1px white solid;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  backdrop-filter: blur(5px);
 
   /* justify-content: ; */
 }
@@ -130,12 +58,15 @@
   font-size: 11px;
   height: inherit;
   width: 100%;
-  background: transparent;
+  background: #0f110d85;
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   display: visible;
 }
 
 .searchbar div input:focus {
-  outline: none;
+  outline: none;  
 }
 
 /*----- cart ------- */
