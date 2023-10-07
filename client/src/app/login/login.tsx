@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 function Login() {
   return (
-    <div>Login</div>
-  )
+    <>
+      <main className="flex justify-center items-center h-screen w-[100%] text-white">
+        login
+      </main>
+    </>
+  );
 }
 
-export default Login
+export default Login;

@@ -5,10 +5,10 @@ function DealsDay() {
   return (
     <>
       {/* section frame */}
-      <main className="relative h-auto w-full flex my-28 justify-center text-sm ">
+      <main className="relative h-auto w-full flex my-10 justify-center text-sm ">
         {/* section */}
         <div className="absolute w-36 top-16 h-48 bg-white filter blur-3xl "></div>
-        <div className=" border-2 border-l-transparent border-r-transparent w-[100%] overflow-hidden 2xl:w-[80%] h-full px-1">
+        <div className=" border-2 border-l-transparent border-r-transparent border-b-transparent w-[100%] overflow-hidden 2xl:w-[80%] h-full px-1">
           <div className="flex text-md my-2 gap-10 ">
             <h1 className='font-bold'>Deals of the Day</h1>
             <h1>|</h1>

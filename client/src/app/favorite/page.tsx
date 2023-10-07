@@ -1,5 +1,5 @@
 import React from 'react';
-import Favorite from './Favorite';
+import Favorite from './favorite';
 
 function Page() {
   return (

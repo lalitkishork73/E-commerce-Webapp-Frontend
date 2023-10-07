@@ -17,7 +17,9 @@ const Navbar = () => {
       <header className=" flex flex-col sm:flex-row justify-around items-center p-1  sm:bg-gradient-to-b from-black/40  backdrop-blur-md relative z-10 w-full ">
         {/* Logo */}
         <div className="w-[40%]">
-          <Logo />
+          <Link href='/'>
+            <Logo />
+          </Link>
         </div>
         <div className="absolute inset-0 left-[92%] top-4 h-4 w-4 bg-black/40 backdrop:blur-md sm:hidden">
           {toggle ? (

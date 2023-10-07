@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Image from 'next/image';
 import ProductList from './productList';
+import LazyYouTube from './subcomponents/ytube';
+
 function Hero() {
   return (
     <>
@@ -9,13 +11,7 @@ function Hero() {
           <ProductList />
           <div className="w-[100%] md:w-[90%] h-[100%] grid grid-cols-1 sm:grid-cols-3 grid-rows-5 sm:grid-rows-3 gap-1 p-1 md:p-2">
             <div className=" bg-white/10 col-span-1 row-span-2 sm:col-span-3 sm:row-span-2 backdrop-blur-md rounded-xl ">
-              <iframe
-                title="YouTube Video"
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/NTM0JhTi028?controls=0&loop=1&playlist=NTM0JhTi028&autoplay=1&rel=0&showinfo=0&enablejsapi=0"
-                className="rounded-xl relative w-full h-full shadow-2xl shadow-white backdrop-brightness-105"
-              ></iframe>
+              <LazyYouTube />
             </div>
             <div className=" bg-white/10 backdrop-blur-md col-span-1 row-span-1 flex justify-center items-center p-1 rounded-xl ">
               <Image
@@ -24,7 +20,6 @@ function Hero() {
                 height="150"
                 alt="Poster"
                 className="w-[100%] h-[100%] rounded-xl"
-                quality={80}
               />
             </div>
             <div className=" bg-white/10 backdrop-blur-md col-span-1 row-span-1 flex justify-center items-center p-1 rounded-xl">
@@ -34,7 +29,6 @@ function Hero() {
                 height="150"
                 alt="Poster"
                 className="w-[100%] h-[100%] rounded-xl"
-                quality={80}
               />
             </div>
             <div className=" bg-white/10 backdrop-blur-md col-span-1 row-span-1 flex justify-center items-cente p-1 rounded-xl">
@@ -44,7 +38,6 @@ function Hero() {
                 height="150"
                 alt="Poster"
                 className="w-[100%] h-[100%] rounded-xl"
-                quality={80}
               />
             </div>
           </div>

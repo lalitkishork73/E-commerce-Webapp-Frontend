@@ -8,7 +8,7 @@ import {
 function Homee() {
   return (
     <>
-      <main className="absolute h-full w-full flex flex-col  ">
+      <main className=" h-full w-full flex flex-col  ">
         <Hero />
         <DealsDay />
         <FeaturedProducts />
