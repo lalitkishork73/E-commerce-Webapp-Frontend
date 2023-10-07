@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from './subComponents/logo';
 
 const Footer = () => {
   const date = new Date();
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row  gap-2 w-full h-full p-1">
           <div className="flex justify-center items-center w-[100%] h-[100%]">
             <div className="h-1/2 p-1">
-              <h1 className="text-3xl font-serif font-bold my-2">One Price</h1>
+              <Logo />
               <p>The Best product anytime anywhere</p>
             </div>
           </div>
@@ -26,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full ">
+        <div className="w-full">
           <h1 className="text-center">
             Copyright © {date.getFullYear()} Brand store. Powered by Brand store
           </h1>

@@ -7,8 +7,6 @@
 /*----- logo------- */
 
 .logo {
-  
-
   color: white;
   padding: 2px;
   position: relative;
@@ -63,7 +61,7 @@
 }
 
 .searchbar div input:focus {
-  outline: none;  
+  outline: none;
 }
 
 /*----- cart ------- */
