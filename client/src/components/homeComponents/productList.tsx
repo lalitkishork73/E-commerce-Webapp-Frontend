@@ -1,6 +1,6 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 function ProductList() {
   const [show, setShow] = useState(false);
   const Toggle = () => {

@@ -15,8 +15,8 @@ const Footer = () => {
           </div>
           <div className="flex justify-center items-center w-[100%] h-[100%">
             <div className="w-1/2">
-              <h1 className="font-bold ">Products</h1>
-              <ul>
+              <h1 className="font-bold text-center ">Products</h1>
+              <ul className=" text-center">
                 <li>Electronics</li>
                 <li>Men's</li>
                 <li>Woman's</li>
