@@ -6,7 +6,7 @@ import Image from 'next/image';
 function AddvertismentsGrid() {
   return (
     <>
-      <main className="w-full h-[400px] flex justify-center ">
+      <section className="w-full h-[400px] flex justify-center ">
         <div className=" w-[100%] 2xl:w-[80%] h-[100%] bg-gradient-to-l from-[#399fff] via-[#2f4658] ">
           <div className="relative h-[400px] overflow-hidden">
             {/* Background Layer */}
@@ -32,7 +32,7 @@ function AddvertismentsGrid() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 }

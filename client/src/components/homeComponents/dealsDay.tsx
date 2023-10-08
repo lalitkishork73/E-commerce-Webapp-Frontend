@@ -5,7 +5,7 @@ function DealsDay() {
   return (
     <>
       {/* section frame */}
-      <main className="relative h-auto w-full flex my-10 justify-center text-sm ">
+      <section className="relative h-auto w-full flex my-10 justify-center text-sm ">
         {/* section */}
         <div className="absolute w-36 top-16 h-48 bg-white filter blur-3xl "></div>
         <div className=" border-2 border-l-transparent border-r-transparent border-b-transparent w-[100%] overflow-hidden 2xl:w-[80%] h-full px-1">
@@ -28,7 +28,7 @@ function DealsDay() {
         
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 }

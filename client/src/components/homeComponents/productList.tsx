@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { BsMenuButtonWideFill } from 'react-icons/bs';
 function ProductList() {
   const [show, setShow] = useState(false);
   const Toggle = () => {
@@ -8,15 +9,17 @@ function ProductList() {
   };
   return (
     <>
-      <button className="z-20 absolute md:hidden" onClick={Toggle}>
-        Click
-      </button>
+      <BsMenuButtonWideFill
+        className="z-20  absolute  md:hidden top-20 left-2 w-5 h-5 rounded-r-lg "
+        onClick={Toggle}
+      />
+
       <div
         className={`${
           show ? 'block' : 'hidden'
         } md:block w-[100%] md:w-[300px] h-[60%] z-10 p-1 md:p-2 absolute md:relative  `}
       >
-        <div className=" bg-gradient-to-b from-gray-100/10 backdrop-blur-sm w-[100%] h-[100%] md:h-[80%] rounded-lg p-1 overflow-scroll text-xs font-medium shadow-sm shadow-white ">
+        <div className=" bg-gradient-to-t from-white/10 backdrop-blur-sm w-[100%] h-[100%] md:h-[80%] rounded-lg p-1 overflow-y-scroll text-xs font-medium shadow-sm shadow-white ">
           <h1 className="text-center font-bold py-2 ">Products</h1>
 
           <ul className=" block">

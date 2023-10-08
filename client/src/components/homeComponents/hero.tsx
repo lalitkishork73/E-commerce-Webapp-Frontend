@@ -6,7 +6,7 @@ import LazyYouTube from './subcomponents/ytube';
 function Hero() {
   return (
     <>
-      <main className="bg-black w-[100%] h-[900px] pt-[100px] flex justify-center text-sm ">
+      <section className="bg-black w-[100%] h-[900px] pt-[100px] flex justify-center text-sm ">
         <div className="w-[100%] 2xl:w-[80%]  flex justify-between h-full ">
           <ProductList />
           <div className="w-[100%] md:w-[90%] h-[100%] grid grid-cols-1 sm:grid-cols-3 grid-rows-5 sm:grid-rows-3 gap-1 p-1 md:p-2">
@@ -42,7 +42,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 }

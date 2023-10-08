@@ -5,7 +5,7 @@ const FeaturedProducts = () => {
   return (
     <>
       {/* frame */}
-      <div className=" h-auto w-full flex my-12 justify-center text-sm ">
+      <section className=" h-auto w-full flex my-12 justify-center text-sm ">
         {/* frame body */}
         <div className="border-2 border-l-transparent border-r-transparent border-b-transparent w-[100%] overflow-hidden 2xl:w-[80%] h-full px-1">
           {/* Headings */}
@@ -84,7 +84,7 @@ const FeaturedProducts = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

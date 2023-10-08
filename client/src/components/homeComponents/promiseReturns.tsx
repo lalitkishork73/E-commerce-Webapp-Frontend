@@ -31,7 +31,7 @@ function PromiseReturns() {
 
   return (
     <>
-      <main className="flex flex-col sm:flex-row justify-center items-center w-[100%] h-[100%] my-[40px] ">
+      <section className="flex flex-col sm:flex-row justify-center items-center w-[100%] h-[100%] my-[40px] ">
         <div className="flex flex-col lg:flex-row items-center lg:justify-around h-[100%] w-[100%] xl:w-[80%] gap-2 px-2">
           {data.map((item) => (
             <div key={item.id}>
@@ -39,7 +39,7 @@ function PromiseReturns() {
             </div>
           ))}
         </div>
-      </main>
+      </section>
     </>
   );
 }
