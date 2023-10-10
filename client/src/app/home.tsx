@@ -9,7 +9,7 @@ function Homee() {
   return (
     <>
       <main className=" h-full w-full flex flex-col  ">
-        <Hero />
+        <Hero />  
         <DealsDay />
         <FeaturedProducts />
         <AddvertismentsGrid />
