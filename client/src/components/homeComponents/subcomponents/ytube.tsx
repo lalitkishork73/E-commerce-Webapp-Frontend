@@ -2,6 +2,7 @@ const LazyYouTube = () => {
   return (
     <iframe
       title="YouTube Video"
+      // loading="lazy"/*  */
       width="100%"
       height="100%"
       src="https://www.youtube.com/embed/NTM0JhTi028?controls=0&loop=1&playlist=NTM0JhTi028&autoplay=1&rel=0&showinfo=0&enablejsapi=0"

@@ -15,7 +15,7 @@ function DealsDay() {
             <h1 className="text-red-500">20:14:00 Left</h1>
           </div>
           {/* Outer card container */}
-          <div className=" flex w-[100%] h-auto p-1 gap-2 overflow-x-scroll mt-4">
+          <div className=" flex w-[100%] h-auto p-1 py-5 gap-5 overflow-x-scroll mt-4">
             {/* inner card  */}
             <ShopCard image={"https://gaming-workdo.myshopify.com/cdn/shop/products/1_4661881d-c8c7-4d3b-962e-038344e4ac81_600x600.png?v=1671451100"}/>
             <ShopCard image={"https://gaming-workdo.myshopify.com/cdn/shop/products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_600x600.png?v=1671448019"}/>

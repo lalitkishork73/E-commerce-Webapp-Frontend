@@ -4,7 +4,7 @@ import SignUp from './signUp';
 function Page() {
   return (
     <>
-      <main className="pt-16 sm:pt-5  flex justify-center items-center">
+      <main className="h-screen pt-16 sm:pt-5 flex justify-center items-center ">
         <SignUp />
       </main>
     </>

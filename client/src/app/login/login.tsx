@@ -21,7 +21,7 @@ function Login() {
   return (
     <>
       <main className="flex justify-center items-center h-screen w-[100%] text-white">
-        <div className="flex flex-col items-center w-[300px] h-[500px] bg-gradient-to-b from-[#292929]/70 backdrop-blur-md rounded-lg border-b">
+        <div className="flex flex-col items-center w-[300px] h-auto bg-gradient-to-b from-[#292929]/70 backdrop-blur-md rounded-lg border-b">
           <div>
             <h1 className="text-center h-10 font-bold my-1 ">Login</h1>
           </div>
