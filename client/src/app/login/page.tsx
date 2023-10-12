@@ -4,7 +4,9 @@ import Login from './login';
 function Page() {
   return (
     <>
-      <Login />
+      <main className="pt-16 sm:pt-5">
+        <Login />
+      </main>
     </>
   );
 }
